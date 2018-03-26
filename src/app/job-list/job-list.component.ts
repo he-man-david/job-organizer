@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Job } from '../job';
+import { Jobs } from '../mock-jobs';
 
 @Component({
   selector: 'app-job-list',
@@ -7,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./job-list.component.css']
 })
 export class JobListComponent implements OnInit {
+
+  jobs: Job[] = Jobs;
 
   constructor() { }
 
