@@ -5,12 +5,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { JobListComponent } from './job-list/job-list.component';
+import { FiveDayCalendarComponent } from './five-day-calendar/five-day-calendar.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    JobListComponent
+    JobListComponent,
+    FiveDayCalendarComponent
   ],
   imports: [
     BrowserModule,
