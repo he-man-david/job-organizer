@@ -4,7 +4,7 @@ import { Job } from '../job';
 import { Jobs } from '../mock-jobs';
 
 @Component({
-  selector: 'app-job-list',
+  selector: 'job-list',
   templateUrl: './job-list.component.html',
   styleUrls: ['./job-list.component.css']
 })
