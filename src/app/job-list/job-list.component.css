@@ -1,3 +1,9 @@
 .jobsList {
   margin: 0 auto;
 }
+
+.progressBarGradient {
+  height: 24px;
+  width: 10%;
+  background: linear-gradient(to right,   #C3C9C5, #01FF2B );
+}

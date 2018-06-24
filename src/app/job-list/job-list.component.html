@@ -12,7 +12,11 @@
       <tr class="row" *ngFor="let job of jobs">
         <td class="col-lg-3">{{job.name}}</td>
         <td class="col-lg-2">{{job.position}}</td>
-        <td class="col-lg-5">{{job.progress}}</td>
+        <td class="col-lg-5">
+          <div class="progressBarGradient" [style.width]="job.progress + '%'">
+            {{job.progress}}
+          </div>
+        </td>
         <td class="col-lg-2">{{job.status}}</td>
       </tr>
     </tbody>
