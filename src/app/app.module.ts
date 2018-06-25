@@ -8,6 +8,7 @@ import { JobListComponent } from './job-list/job-list.component';
 import { FiveDayCalendarComponent } from './five-day-calendar/five-day-calendar.component';
 import { UpcomingEventsListComponent } from './upcoming-events-list/upcoming-events-list.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { HomePageComponent } from './home-page/home-page.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { AppRoutingModule } from './/app-routing.module';
     AppComponent,
     JobListComponent,
     FiveDayCalendarComponent,
-    UpcomingEventsListComponent
+    UpcomingEventsListComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
