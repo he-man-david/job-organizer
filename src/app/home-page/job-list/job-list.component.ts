@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Job } from '../job';
-import { Jobs } from '../mock-jobs';
+import { Job } from '../../job';
+import { Jobs } from '../../mock-jobs';
 
 @Component({
   selector: 'job-list',
