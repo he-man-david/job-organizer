@@ -1,4 +1,4 @@
-<table class="table">
+<table class="table table-striped">
   <thead>
     <tr class="row">
       <th scope="col" class="col-lg-2">Date</th>
@@ -8,15 +8,13 @@
     </tr>
   </thead>
   <tbody>
-    <tr class="row">
-      <td class="col-lg-2">5/20/2018</td>
-      <td class="col-lg-2">9:30am</td>
-      <td class="col-lg-2">Microsoft</td>
+    <tr class="row" *ngFor="let event of events">
+      <td class="col-lg-2">{{ event.date }}</td>
+      <td class="col-lg-2">{{ event.time }}</td>
+      <td class="col-lg-2">{{ event.company }}</td>
       <td class="col-lg-6">
-        <p id="events-list-position">Microservice Developer</p>
-        <p>
-          fawejfo oawejfioa jfio alwfma mflkawe lfnjanfe nawjfk awnfkwnefwefnkawnfkl wf.
-        </p>
+        <p id="events-list-position">{{ event.info.role }}</p>
+        <p>{{ event.info.reminder }}</p>
       </td>
     </tr>
   </tbody>
