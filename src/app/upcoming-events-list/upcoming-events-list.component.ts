@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Events } from '../mock-events';
+import { Event } from '../event';
 
 @Component({
   selector: 'upcoming-events-list',
@@ -6,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./upcoming-events-list.component.css']
 })
 export class UpcomingEventsListComponent implements OnInit {
+
+  events: Event[] = Events
 
   constructor() { }
 
