@@ -10,6 +10,7 @@ import { UpcomingEventsListComponent } from './upcoming-events-list/upcoming-eve
 import { AppRoutingModule } from './/app-routing.module';
 import { HomePageComponent } from './home-page/home-page.component';
 import { JobDetailsPageComponent } from './job-details-page/job-details-page.component';
+import { JobDetailCardComponent } from './job-detail-card/job-detail-card.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { JobDetailsPageComponent } from './job-details-page/job-details-page.com
     FiveDayCalendarComponent,
     UpcomingEventsListComponent,
     HomePageComponent,
-    JobDetailsPageComponent
+    JobDetailsPageComponent,
+    JobDetailCardComponent
   ],
   imports: [
     BrowserModule,

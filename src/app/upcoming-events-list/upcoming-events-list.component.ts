@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Events } from '../../mock-events';
-import { Event } from '../../event';
+import { Events } from '../mock-events';
+import { Event } from '../event';
 
 @Component({
   selector: 'upcoming-events-list',
