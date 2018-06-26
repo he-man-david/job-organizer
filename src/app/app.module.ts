@@ -11,6 +11,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { HomePageComponent } from './home-page/home-page.component';
 import { JobDetailsPageComponent } from './job-details-page/job-details-page.component';
 import { JobDetailCardComponent } from './job-details-page/job-detail-card/job-detail-card.component';
+import { UpcomingInterviewsComponent } from './upcoming-interviews/upcoming-interviews.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { JobDetailCardComponent } from './job-details-page/job-detail-card/job-d
     UpcomingEventsListComponent,
     HomePageComponent,
     JobDetailsPageComponent,
-    JobDetailCardComponent
+    JobDetailCardComponent,
+    UpcomingInterviewsComponent
   ],
   imports: [
     BrowserModule,
