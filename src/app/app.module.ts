@@ -11,7 +11,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { HomePageComponent } from './home-page/home-page.component';
 import { JobDetailsPageComponent } from './job-details-page/job-details-page.component';
 import { JobDetailCardComponent } from './job-details-page/job-detail-card/job-detail-card.component';
-import { UpcomingInterviewsComponent } from './upcoming-interviews/upcoming-interviews.component';
+import { UpcomingInterviewsComponent } from './job-details-page/upcoming-interviews/upcoming-interviews.component';
 
 
 @NgModule({
