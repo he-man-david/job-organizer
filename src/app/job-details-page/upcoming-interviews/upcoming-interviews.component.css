@@ -1,4 +1,20 @@
 #upcomingInterviewDiv {
     border: 2px solid blue;
     border-radius: 10px;
+    padding: 20px;
+}
+
+.upcomingEventBox {
+    border: 2px solid #EBEDEF;
+    width: 220px;
+    padding: 15px;
+    border-radius: 10px;
+    line-height: 10px;
+}
+
+#upcomingEventH5New {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
 }
