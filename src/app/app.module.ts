@@ -12,6 +12,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { JobDetailsPageComponent } from './job-details-page/job-details-page.component';
 import { JobDetailCardComponent } from './job-details-page/job-detail-card/job-detail-card.component';
 import { UpcomingInterviewsComponent } from './job-details-page/upcoming-interviews/upcoming-interviews.component';
+import { ProgressCircleComponent } from './job-details-page/progress-circle/progress-circle.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { UpcomingInterviewsComponent } from './job-details-page/upcoming-intervi
     HomePageComponent,
     JobDetailsPageComponent,
     JobDetailCardComponent,
-    UpcomingInterviewsComponent
+    UpcomingInterviewsComponent,
+    ProgressCircleComponent
   ],
   imports: [
     BrowserModule,
