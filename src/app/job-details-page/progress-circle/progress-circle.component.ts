@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-progress-circle',
+  selector: 'progress-circle',
   templateUrl: './progress-circle.component.html',
   styleUrls: ['./progress-circle.component.css']
 })
