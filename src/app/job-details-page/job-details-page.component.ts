@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JobDetailsPageComponent implements OnInit {
 
+  progressData = { 'percentage': 0.61, 'status': '2nd Round Interview' };
+
   constructor() { }
 
   ngOnInit() {
