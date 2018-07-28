@@ -20,7 +20,7 @@ export class ProgressCircleComponent implements AfterViewInit {
   padding: number      = 0;
   startPercent: number = 0;
   endPercent: number;
-  color: string        = '#47e495';
+  color: string        = '#11E8CE';
   twoPi                = Math.PI * 2;
   formatPercent        = d3.format('.0%');
   boxSize              = (this.radius + this.padding) * 2 + 30;
@@ -94,14 +94,19 @@ export class ProgressCircleComponent implements AfterViewInit {
                                 .attr('fill-opacity', 1);
 
     this.numberText = this.meter.append('text')
-                                .attr('fill', 'blue')
+                                .attr('fill', this.color)
                                 .attr('text-anchor', 'middle')
-                                .attr('dy', '.35em');
+                                .style('font-family', '"Helvetica Neue", Helvetica, Arial, sans-serif')
+                                .style('font-size', '65px')
+                                .style('font-weight', 'bold')
+                                .attr('dy', '.35em')
+                                .attr('dx', '.10em');
   }
 
   private updateProgress() {
     this.foreground.attr('d', this.arc.endAngle(this.twoPi * this.progress));
     this.front.attr('d', this.arc.endAngle(this.twoPi * this.progress));
+    
     this.numberText.text(this.formatPercent(this.progress));
   }
 
@@ -113,7 +118,6 @@ export class ProgressCircleComponent implements AfterViewInit {
       take(this.count)
     )
     .subscribe(i => {
-      // this.count = i;
       console.log(this.count);
       this.updateProgress();
       this.progress += this.step;
